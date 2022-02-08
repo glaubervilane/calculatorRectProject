@@ -1,8 +1,10 @@
+import React from 'react';
+import reactDom from 'react-dom';
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Calculator from './Calculator';
 
 test('renders learn react link', () => {
-  render(<App />);
+  render(<Calculator />);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });

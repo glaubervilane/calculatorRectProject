@@ -1,0 +1,31 @@
+.calculatorBody {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #000000;
+  border-radius: .3rem;  
+  padding: 5px;
+  margin: 5px;
+  width: 400px;
+}
+.outBackground {  
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color:dimgray;
+  border-radius: .3rem;  
+  padding: 5px;
+  margin: 5px;
+  width: 420px;
+}
+h4 {
+  color: #FFFFFF;
+  text-align: center;
+}
+button {
+  width: 90%;
+  margin: 4px !important;
+}
+input[type=text] {
+  margin-top: 3px;
+  width: 96%;
+  margin-left: 6px;
+}
