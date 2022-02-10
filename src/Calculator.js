@@ -6,7 +6,7 @@ import CalculatorService from './calculator.service'
 
 function Calculator() {
 
-  const [calculate, concatenateNumber] = CalculatorService();
+  const [calculate, concatenateNumber, sumNumbers, subtractNumbers, multiplyNumbers, divideNumbers] = CalculatorService();
 
   const [txtNumbers, setTxtNumbers] = useState('0');
   const [number1, setNumber1] = useState('0');
@@ -74,7 +74,8 @@ function Calculator() {
               <Form.Control type="text"
                 name="txtNumbers"
                 readOnly="readonly" 
-                value={txtNumbers}/>
+                value={txtNumbers}
+                data-testid="txtNumbers"/>
             </Col>
           </Row>
 
@@ -93,7 +94,7 @@ function Calculator() {
             </Col>
             <Col>
               <Button variant="warning"
-              onClick={() => defineOperation('/')}>/</Button>
+              onClick={() => defineOperation(divideNumbers)}>/</Button>
             </Col>
           </Row>
 
@@ -112,7 +113,7 @@ function Calculator() {
             </Col>
             <Col>
               <Button variant="warning"
-              onClick={() => defineOperation('*')}>*</Button>
+              onClick={() => defineOperation(multiplyNumbers)}>*</Button>
             </Col>
           </Row>
 
@@ -131,7 +132,7 @@ function Calculator() {
             </Col>
             <Col>
               <Button variant="warning"
-              onClick={() => defineOperation('-')}>-</Button>
+              onClick={() => defineOperation(subtractNumbers)}>-</Button>
             </Col>
           </Row>
 
@@ -150,7 +151,7 @@ function Calculator() {
             </Col>
             <Col>
               <Button variant="warning"
-              onClick={() => defineOperation('+')}>+</Button>
+              onClick={() => defineOperation(sumNumbers)}>+</Button>
             </Col>
           </Row>
         </Container>
