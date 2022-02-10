@@ -17,7 +17,7 @@
   width: 420px;
 }
 h4 {
-  color: #FFFFFF;
+  color: #FFFFFF; 
   text-align: center;
 }
 button {
@@ -28,4 +28,6 @@ input[type=text] {
   margin-top: 3px;
   width: 96%;
   margin-left: 6px;
+  align-content: center;  
+  text-align: right;
 }
